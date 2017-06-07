@@ -1,0 +1,80 @@
+body{
+  margin: 0 auto;
+  font-family: verdana;
+}
+#left-sidebar{
+  color: white;
+  background-color: steelblue;
+  padding-top: 100px;
+  min-height: 850px;
+}
+
+#right-sidebar{
+  min-height: 850px;
+  padding: 0px 0px;
+}
+#right-sidebar > h1{
+  text-align: center;
+}
+input{
+  color: black;
+  width: 100%;
+}
+.stripe{
+  background-color: steelblue;
+  min-height: 50px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.row{
+  margin: 0px;
+}
+.info{
+  text-align: center;
+}
+.scoreBtn{
+  margin-top: 100px;
+}
+.score{
+  font-size: 500%;
+}
+.winner{
+  color : #c9302c;
+}
+.looser{
+  color : grey;
+  text-decoration:line-through;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    border: 3px dashed #73AD21;
+}
+li{
+  line-height: 2;
+}
+
+@media (max-width:767px){
+  img{
+    width: 100%;
+  }
+  #left-sidebar, #right-sidebar{
+    min-height: auto;
+    padding: 10px;
+  }
+  .scoreBtn{
+    margin-top: 50px;
+  }
+  .instruction{
+    display: none;
+  }
+}
+
+.well{
+  margin-top: 30px;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Score Keeper</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div>
+      <div id="left-sidebar" class="col-sm-4">
+        <h1>Playing To
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-xs-3"><button id="inc" class="pull-right btn btn-warning"><i class="glyphicon glyphicon-arrow-up"></i></button></div>
+            <div class="col-xs-6"><input id="playingTo" class="form-control" type="number" value="6"></div>
+            <div class="col-xs-3"><button id="dec" class="pull-left btn btn-warning"><i class="glyphicon glyphicon-arrow-down"></i></button></div>
+          </div>
+        </h1>
+
+        <br><br>
+        <div class="instruction hidden-xs">
+          <hr>
+          <h3>Instructions:</h3>
+          <ol>
+            <li>Changing the "Playing to" option in the middle of the game will reset the entire game.</li>
+            <li>Score color of the Player who wins will be turned RED.</li>
+            <li>Score color of the Player who lose will be turned GREY and STRIKED THROUGH.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div id="right-sidebar" class="col-sm-8">
+        <h1>Score Board</h1>
+
+        <div class="stripe"></div>
+
+        <div class="row">
+          <div class="col-xs-6">
+            <center><img src="player.png" alt=""></center>
+            <div class="info">
+              <div id="score1" class="score">0</div>
+            </div>
+            <center><button id="p1" class="scoreBtn btn btn-danger">Player 1</button></center>
+          </div>
+
+          <div class="col-xs-6">
+            <center><img src="player.png" alt=""></center>
+            <div class="info">
+              <div id="score2" class="score">0</div>
+            </div>
+            <center><button id="p2" class="scoreBtn btn btn-danger">Player 2</button></center>
+          </div>
+          <center><button id="reset"class="btn hide btn-success btn-lg">play again?</button></center>
+        </div>
+        <div class="well hidden-sm hidden-md hidden-lg">
+          <h3>Instructions:</h3>
+          <ol>
+            <li>Changing the "Playing to" option in the middle of the game will reset the entire game.</li>
+            <li>Score color of the Player who wins will be turned RED.</li>
+            <li>Score color of the Player who lose will be turned GREY and STRIKED THROUGH.</li>
+          </ol>
+        </div>
+        <footer>Designed and Coded by <a href="http://www.kapeed07.com" target="_blank">Deepak Bhardwaj</a></footer>
+      </div>
+    </div>
+
+    <!-- Custom javascript -->
+    <script rel="text/javascript" src="main.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
